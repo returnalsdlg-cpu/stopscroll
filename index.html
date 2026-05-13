@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desconéctate | Proyecto Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#problema">Problema</a>
+        <a href="#test">Test</a>
+        <a href="#autores">Autores</a>
+    </nav>
+
+    <header id="inicio">
+        <h1>STOP.</h1>
+        <p>Controla el celular antes de que el celular te controle.</p>
+    </header>
+
+    <section id="problema">
+        <h2>Problemática</h2>
+        <div class="grid">
+            <div class="card"><h3>Distracción</h3><p>Impacto directo en la retención escolar.</p></div>
+            <div class="card"><h3>Ansiedad</h3><p>Dependencia emocional al dispositivo.</p></div>
+        </div>
+        <div style="margin-top:20px">
+            <div class="bar-wrap"><div class="bar" style="width: 80%;">80% Uso Crítico</div></div>
+        </div>
+    </section>
+
+    <section id="test" style="background: #f9f9f9; text-align: center;">
+        <h2>Test de Dependencia</h2>
+        <p id="pregunta" style="font-size: 1.5rem;">¿Revisas el móvil al despertar?</p>
+        <button class="btn" onclick="responder(true)">Sí</button>
+        <button class="btn" onclick="responder(false)">No</button>
+        <p id="res" style="margin-top: 20px; font-weight: bold;"></p>
+    </section>
+
+    <footer id="autores">
+        <p>AUTORES: LUIS ANTONIO DUARTE CHACÓN & WILLIAM AXEL PEÑA LUNA</p>
+        <p>© 2026 - Colegio de Bachilleres Plantel 7</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
