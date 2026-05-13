@@ -2,44 +2,96 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Desconéctate | Proyecto Escolar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFF-SCREEN | Conciencia Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#problema">Problema</a>
-        <a href="#test">Test</a>
-        <a href="#autores">Autores</a>
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">STOP_SCROLL</a>
+            <div class="nav-links">
+                <a href="#problema">Impacto</a>
+                <a href="#test">Test</a>
+                <a href="#conclusion">Final</a>
+            </div>
+        </div>
     </nav>
 
-    <header id="inicio">
-        <h1>STOP.</h1>
-        <p>Controla el celular antes de que el celular te controle.</p>
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="title-main">DESCONÉCTATE.</h1>
+            <p class="subtitle">"Controla el celular antes de que el celular te controle."</p>
+            <div class="scroll-indicator"></div>
+        </div>
     </header>
 
-    <section id="problema">
-        <h2>Problemática</h2>
-        <div class="grid">
-            <div class="card"><h3>Distracción</h3><p>Impacto directo en la retención escolar.</p></div>
-            <div class="card"><h3>Ansiedad</h3><p>Dependencia emocional al dispositivo.</p></div>
-        </div>
-        <div style="margin-top:20px">
-            <div class="bar-wrap"><div class="bar" style="width: 80%;">80% Uso Crítico</div></div>
+    <section id="problema" class="content-section">
+        <h2 class="section-heading">Problemática Escolar</h2>
+        <div class="bento-grid">
+            <div class="bento-item">
+                <h3>Atención Fragmentada</h3>
+                <p>El uso constante reduce la capacidad de enfoque profundo necesaria para aprender.</p>
+            </div>
+            <div class="bento-item highlight">
+                <h3>Bajo Rendimiento</h3>
+                <p>La presencia del celular distrae la capacidad cognitiva, afectando las calificaciones finales.</p>
+            </div>
+            <div class="bento-item">
+                <h3>Salud & Sueño</h3>
+                <p>La luz azul inhibe la melatonina, causando fatiga crónica en las primeras horas de clase.</p>
+            </div>
         </div>
     </section>
 
-    <section id="test" style="background: #f9f9f9; text-align: center;">
-        <h2>Test de Dependencia</h2>
-        <p id="pregunta" style="font-size: 1.5rem;">¿Revisas el móvil al despertar?</p>
-        <button class="btn" onclick="responder(true)">Sí</button>
-        <button class="btn" onclick="responder(false)">No</button>
-        <p id="res" style="margin-top: 20px; font-weight: bold;"></p>
+    <!-- Punto 7: Historia de Impacto -->
+    <section id="historia" class="content-section">
+        <h2 class="section-heading">Historia de Impacto</h2>
+        <div class="bento-item" style="max-width: 800px; margin: 0 auto; border-left: 5px solid white;">
+            <p style="font-style: italic; font-size: 1.2rem; line-height: 1.8; color: #ccc;">
+                "Julián, un estudiante destacado del COBACH, comenzó a desvelarse viendo videos cortos. En un semestre, su promedio cayó de 9.5 a 7.0. Tras notar su constante fatiga y ansiedad, decidió aplicar límites de tiempo en su dispositivo. Hoy, Julián no solo recuperó sus notas, sino que mejoró su salud mental."
+            </p>
+        </div>
     </section>
 
-    <footer id="autores">
-        <p>AUTORES: LUIS ANTONIO DUARTE CHACÓN & WILLIAM AXEL PEÑA LUNA</p>
-        <p>© 2026 - Colegio de Bachilleres Plantel 7</p>
+    <section id="test" class="test-section">
+        <div class="test-card">
+            <h2>Test de Dependencia</h2>
+            <div id="test-box">
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <p id="pregunta-texto">Cargando...</p>
+                <div class="btn-group">
+                    <button class="btn-action" onclick="check(true)">SÍ</button>
+                    <button class="btn-action" onclick="check(false)">NO</button>
+                </div>
+                <p id="counter" class="counter">1 / 10</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Punto 9: Conclusión -->
+    <section id="conclusion" class="content-section">
+        <div class="conclusion-wrap" style="text-align: center; border: 1px solid #333; padding: 40px; border-radius: 20px;">
+            <h2 style="margin-bottom: 20px;">Conclusión del Proyecto</h2>
+            <p style="font-size: 1.1rem; color: #aaa;">El equilibrio digital es la base para una salud mental sólida y el éxito académico. Desconectarse para vivir es retomar el control de nuestro futuro y aprovechar realmente el tiempo en el aula.</p>
+        </div>
+    </section>
+
+    <!-- Punto 8: Fuentes de Información -->
+    <section id="fuentes" class="content-section" style="padding-top: 20px;">
+        <h3 style="margin-bottom: 15px; font-size: 1rem; color: white;">Fuentes consultadas:</h3>
+        <ul style="color: #666; list-style: none; font-size: 0.8rem;">
+            <li>• Organización Mundial de la Salud (OMS) - Salud Mental y Dispositivos.</li>
+            <li>• Common Sense Media - Informe sobre Adicción Digital en Adolescentes.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <!-- Punto 10: Nombres de los autores -->
+        <p style="letter-spacing: 1px; margin-bottom: 10px;">AUTORES: LUIS ANTONIO DUARTE CHACÓN & WILLIAM AXEL PEÑA LUNA</p>
+        <p class="location">COBACH 7 • CIUDAD JUÁREZ • 2026</p>
     </footer>
 
     <script src="script.js"></script>
